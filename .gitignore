@@ -1,0 +1,13 @@
+# Rust
+.DS_Store
+**/target
+**/*.rs.bk
+**/Cargo.lock
+
+# Wasm and JS
+**/pkg/
+**/wasm-pack.log
+**/node_modules
+
+# Proofs
+*.receipt
