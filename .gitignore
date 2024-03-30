@@ -5,9 +5,10 @@
 **/Cargo.lock
 
 # Wasm and JS
-**/pkg/
+**/pkg
 **/wasm-pack.log
 **/node_modules
+**/dist
 
 # Proofs
 *.receipt
