@@ -1,0 +1,7 @@
+/// RISC Zero utilities
+package risc0:utils@0.1.0;
+
+/// An example world for the component to target.
+world verifier {
+    export verify-receipt: func(raw: list<u8>) -> result<_, string>;
+}
