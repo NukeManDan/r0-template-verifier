@@ -4,9 +4,10 @@
 **/*.rs.bk
 **/Cargo.lock
 
-# Wasm and JS
-**/pkg/
-**/wasm-pack.log
+# Wasm Components and JS
+**/bindings.rs
+!verifier/src/bindings.rs
+js/**/bindings
 **/node_modules
 
 # Proofs

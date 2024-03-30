@@ -7,7 +7,6 @@ use risc0_zkvm::guest::env;
 
 risc0_zkvm::guest::entry!(main);
 
-/// Testing docs yoyoyo
 fn main() {
     // TODO: Implement your guest code here
 

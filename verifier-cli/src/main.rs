@@ -1,11 +1,11 @@
 use bincode::deserialize;
 use methods::PROVING_METHOD_ID;
-use risc0_zkvm::Receipt;
 use risc0_zkp::verify::VerificationError;
+use risc0_zkvm::Receipt;
 use std::fs::File;
 use std::io::prelude::*;
 
-fn main() -> Result<(), VerificationError>{
+fn main() -> Result<(), VerificationError> {
     let path = "testing.receipt";
     let mut file = File::open(path).expect("open file");
     let mut buf = Vec::new();
@@ -19,10 +19,10 @@ fn main() -> Result<(), VerificationError>{
         Ok(_) => {
             println!("✅ Receipt is valid");
             validity
-        },
+        }
         Err(_) => {
             eprintln!("❌ INVALID Receipt!");
             validity
-        },
+        }
     }
 }
